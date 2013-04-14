@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.databasesystem"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >       
+        <activity
+            android:name="lk.sachith.databasesystem.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="lk.sachith.databasesystem.Menu"
+            android:label="MAIN MENU" >
+            <intent-filter>
+                <action android:name="android.intent.action.MENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="lk.sachith.databasesystem.Department"
+            android:label="Departments" >
+            <intent-filter>
+                <action android:name="android.intent.action.DEPT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="lk.sachith.databasesystem.DepartmentAdder"
+            android:label="Departments" >
+            <intent-filter>
+                <action android:name="android.intent.action.DEPTADD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="lk.sachith.databasesystem.DepartmentViewer"
+            android:label="View Departments" >
+            <intent-filter>
+                <action android:name="android.intent.action.DEPTVIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="lk.sachith.databasesystem.DepartmentDeleter"
+            android:label="Departments" >
+            <intent-filter>
+                <action android:name="android.intent.action.DEPTDELETE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="lk.sachith.databasesystem.Employee"
+            android:label="Employee" >
+            <intent-filter>
+                <action android:name="android.intent.action.EMPLOYEE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="lk.sachith.databasesystem.EmployeeAdder"
+            android:label="Employee" >
+            <intent-filter>
+                <action android:name="android.intent.action.EMPLOYEEADD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="lk.sachith.databasesystem.EmployeeViewer"
+            android:label="Employee" >
+            <intent-filter>
+                <action android:name="android.intent.action.EMPLOYEEVIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="lk.sachith.databasesystem.EmployeeEditor"
+            android:label="Employee" >
+            <intent-filter>
+                <action android:name="android.intent.action.EMPLOYEEEDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="lk.sachith.databasesystem.DepartmentEditor"
+            android:label="Department" >
+            <intent-filter>
+                <action android:name="android.intent.action.DEPTEDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="lk.sachith.databasesystem.Projects"
+            android:label="Projects" >
+            <intent-filter>
+                <action android:name="android.intent.action.PROJS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="lk.sachith.databasesystem.ProjectAdder"
+            android:label="Projects" >
+            <intent-filter>
+                <action android:name="android.intent.action.PROJSADD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="lk.sachith.databasesystem.ProjectsViewer"
+            android:label="Projects Viewer" >
+            <intent-filter>
+                <action android:name="android.intent.action.PROJSVIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="lk.sachith.databasesystem.ProjectsDeleter"
+            android:label="Projects Deleter" >
+            <intent-filter>
+                <action android:name="android.intent.action.PROJSDEL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="lk.sachith.databasesystem.EditProject"
+            android:label="Projects Editor" >
+            <intent-filter>
+                <action android:name="android.intent.action.PROJEDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="lk.sachith.databasesystem.Collaborators"
+            android:label="Projects Collaborators" >
+            <intent-filter>
+                <action android:name="android.intent.action.COLABS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         
+        
+    </application>
+
+</manifest>
